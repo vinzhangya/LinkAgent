@@ -40,6 +40,12 @@
             <groupId>org.apache.zookeeper</groupId>
             <artifactId>zookeeper</artifactId>
             <version>3.4.5</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>log4j</artifactId>
+                    <groupId>log4j</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.netflix.curator</groupId>
@@ -58,7 +64,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.pamirs.pradar</groupId>
+            <groupId>io.shulie.pradar</groupId>
             <artifactId>log-remoting</artifactId>
             <version>2.0.0</version>
             <exclusions>
